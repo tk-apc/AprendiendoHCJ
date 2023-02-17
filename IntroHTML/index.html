@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Primera Web APC22</title>
+    <style>
+        table, th, td {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tablas</h1>
+        <table style="width: 500px;">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>edad</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                    <td>Arturo</td>
+                    <td>PC</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>Salo</td>
+                    <td>PC</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Humberto</td>
+                    <td>PD</td>
+                    <td>64</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td></td>
+                <td></td>
+                <td>Suma de edades = 100</td>
+            </tfoot>
+
+        </table>
+    <hr>
+
+    <h1>Listas</h1>
+<p>{ul}: lista no ordenada, se marcan con puntos o *
+    <br> Para enlistar se usa etiqueta {li}
+</p>
+
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <p>{ol}: lista ordenada
+        <br>Para empezar desde un numero especifico se asigna una propiedad a {li value="#"}
+    </p>
+    <ol>
+        <li value="14">Elemento 1</li>
+        <li>
+            <ol>
+                <li style="list-style-type:lower-greek">Elemento 1</li>
+                <li style="list-style-type:lower-greek">Elemento 2</li>
+                <li style="list-style-type:lower-greek">Elemento 3</li>
+            </ol>
+        </li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ol>
+    <hr>
+    <h1>Formularios</h1>
+    <p>Para hacer formularios se usa etiqueta {form}, las entradas 
+        <br>son con la etiqueta {input/}, antes de ella usar {label} </p>
+    <form action="/formulario" method="GET ">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Arturo"/>
+        <br>
+        <label for="apellido">apellido</label>
+        <input type="text" id="apellido" name="nombre" placeholder="Peñaranda Cedeño"/>
+        <br>
+        <label for="edad">edad</label>
+        <input type="number" id="edad" name="nombre" placeholder="24"/>
+        <br>
+        <label for="coment">coment</label>
+        <textarea rows="10" cols="60" id="coment" placeholder="coment" name="coment"></textarea>
+        <br>
+        <input type="submit"/>
+    </form>
+    <hr>
+    <h1>Primer heading (titulo) (similar a seccion en latex)</h1>
+    <h2>Segundo heading (subtitulo) (similar a subseccion)</h2>
+    <p>Parrafo uno, explicando ejemplo</p>
+    <p>Para hacer parrafos separados hay que ponerlos en diferentes etiquetas de parrafos</p>
+    <hr>
+    <h2>Para separar secciones o Titulos</h2>
+    <p>Debe usar etiqueta {hr}, que solo se abre, no se cierra con {/hr}</p>
+    <!-- para hacer comentarios usar la etiqueta <!-- con la que va a poder
+    comentar todo lo que quiera, los exploradores ven el comentario pero no lo 
+    muestran al usuario-->
+    <p>para hacer comentarios usar la etiqueta {!-- --} con la que va a poder
+        comentar todo<br> lo que quiera, los <span style="color:blueviolet">ven el comentario</span>  pero no lo 
+        muestran al usuario.
+    </p>
+    <p>Para usar la etiquta span se usa para referenciar un texto, posteriormente se podrá <br>
+    estilizar este texto referenciado. </p>
+    <hr>
+    <h2>Salto de linea</h2>
+    <p>con la etiqueta que solo se abre {br}</p>
+    <hr>
+    <h2>Para usar hipervinculos</h2>
+    <p>Se hace uso de la etiqueta {a} con las siguientes propiedades: <br><br>
+        {a href="https://www.google.com"}
+    </p>
+    <a target="_blank" href="https://www.google.com">Ir a google</a>
+    <hr>
+    <h1>Imagenes</h1>
+    <p>etiqueta {img /} se cierra de inmediato.</p>
+    <p>propiedad de etiqueta: src="link o ruta del pc",
+        <br> width="400" und=pixeles, modifica ancho y mantiene relacion ancho con alto
+        <br> height="400", si se modifican los dos se daña la relacion original de la imagen.
+    </p>
+    <img src="img/img.jpg" width="250"/>
+</body>
+</html>
